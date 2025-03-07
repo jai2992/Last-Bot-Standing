@@ -11,7 +11,7 @@ st.set_page_config(
 
 try:
     client = Groq(
-        api_key="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",
+        api_key=st.secrets["connections"]["groq_api_key"],
     )
 except:
     client = None
